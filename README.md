@@ -43,6 +43,7 @@ This is a full-stack **Othello (Reversi)** game developed using Java **Spring Bo
 
 ## What you will see:
 - **Login/Registration Screen:** Can register new credentials (username, password) and login with existing credentials. We use Java Web Tokens for Authorization.
+  
 ![image](https://github.com/user-attachments/assets/bdac0fb7-33c7-458c-beaf-97d51bcf6552)
 ![image](https://github.com/user-attachments/assets/6e1e2145-41bc-49dd-890d-23be8bc9d5d4)
 
