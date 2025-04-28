@@ -20,7 +20,7 @@ public class MultiplayerService {
         session.setHost(host);
         session.setBoard(
             "...................................BW......WB..................................."
-        ); // Correct centered starting point
+        ); 
         session.setCurrentTurn("B");
         session.setCurrentPlayer(host);
         session.setActive(true);

@@ -39,7 +39,6 @@ public class HomeScreen extends JFrame {
 
         setVisible(true);
 
-        // 🛠 Refresh WLD after the GUI is visible
         SwingUtilities.invokeLater(() -> {
             try {
                 String record = ApiClient.fetchRecord();

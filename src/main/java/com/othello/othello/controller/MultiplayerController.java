@@ -16,7 +16,6 @@ public class MultiplayerController {
 
     @PostMapping("/create")
     public ResponseEntity<?> createGame() {
-        // ✅ Get username from authenticated SecurityContext
         System.out.println(SecurityContextHolder.getContext().getAuthentication());
         System.out.println(SecurityContextHolder.getContext().getAuthentication().getPrincipal());
         String hostUsername = (String) SecurityContextHolder.getContext().getAuthentication().getPrincipal();

@@ -38,7 +38,7 @@ public class WaitingScreen extends JFrame {
             public void run() {
                 try {
                     String state = ApiClient.getGameState(gameId);
-                    if (state.contains("\"guest\":\"")) {  // Quick check: guest field is filled
+                    if (state.contains("\"guest\":\"")) {  
                         pollingTimer.cancel();
                         animationTimer.cancel();
                         SwingUtilities.invokeLater(() -> {
@@ -50,7 +50,7 @@ public class WaitingScreen extends JFrame {
                     e.printStackTrace();
                 }
             }
-        }, 0, 3000); // Check every 3 seconds
+        }, 0, 3000); 
     }
 
     private void startAnimation() {
@@ -58,10 +58,10 @@ public class WaitingScreen extends JFrame {
         animationTimer.schedule(new TimerTask() {
             @Override
             public void run() {
-                dotCount = (dotCount + 1) % 4; // 0, 1, 2, 3
+                dotCount = (dotCount + 1) % 4; 
                 String dots = ".".repeat(dotCount);
                 SwingUtilities.invokeLater(() -> label.setText("Waiting for opponent" + dots));
             }
-        }, 0, 500); // Update text every 0.5 seconds
+        }, 0, 500); 
     }
 }

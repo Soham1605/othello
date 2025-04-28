@@ -21,7 +21,7 @@ public class GameSession {
     private String currentTurn;  // "B" or "W"
 
     @Column(name = "current_player", nullable = false)
-    private String currentPlayer;   // 🆕 Added to match database table!
+    private String currentPlayer;   
 
     private boolean active = true;
 }

@@ -142,7 +142,7 @@ public class ApiClient {
         URL url = new URL("http://localhost:8081/api/multiplayer/create");
         HttpURLConnection conn = (HttpURLConnection) url.openConnection();
         conn.setRequestMethod("POST");
-        conn.setRequestProperty("Authorization", "Bearer " + token); // <-- CRITICAL
+        conn.setRequestProperty("Authorization", "Bearer " + token); 
         conn.setDoOutput(true);
 
         if (conn.getResponseCode() != 200) {
